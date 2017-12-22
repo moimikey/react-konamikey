@@ -1,0 +1,73 @@
+{
+  "name": "react-konamikey",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "babel src/index.js -d .",
+    "prebuild": "yarn lint && yarn test && yarn flow",
+    "build": "yarn compile && yarn flow:copy",
+    "test": "jest",
+    "lint": "standard src",
+    "flow": "flow",
+    "flow:copy": "flow-copy-source -v --ignore *test.js src .",
+    "flow:typed": "flow-typed"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "8",
+    "babel-jest": "^22.0.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.13.1",
+    "eslint-plugin-flow": "^2.29.1",
+    "eslint-plugin-flowtype": "^2.40.1",
+    "eslint-plugin-react": "^7.5.1",
+    "extract-react-types": "^0.4.2",
+    "flow-bin": "^0.61.0",
+    "flow-copy-source": "^1.2.1",
+    "flow-typed": "^2.2.3",
+    "jest": "^22.0.3",
+    "react-dom": "^16.2.0",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "react": "^16.2.0"
+  },
+  "standard": {
+    "globals": [],
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype",
+      "react"
+    ],
+    "env": [
+      "browser",
+      "jest",
+      "es6",
+      "shared-node-browser"
+    ]
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moimikey/react-konamikey.git"
+  },
+  "keywords": [
+    "react",
+    "konami",
+    "keydown",
+    "keypress",
+    "sequence",
+    "easteregg"
+  ],
+  "author": "Michael Scott Hertzberg <mshertzberg@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/moimikey/react-konamikey/issues"
+  },
+  "homepage": "https://github.com/moimikey/react-konamikey#readme"
+}
