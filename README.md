@@ -1,5 +1,7 @@
 # react-konamikey
 
+Trigger a callback function on anything with a sequence of key presses.
+
 ## Install
 
 ```bash
@@ -56,6 +58,10 @@ An array of strings representing key names.
   <div>hello world</div>
 </Konami>
 ```
+
+### live example
+
+https://www.webpackbin.com/bins/-L1-29LWQ5A4r6O6cveW
 
 ## License
 
