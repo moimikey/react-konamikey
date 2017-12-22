@@ -1,9 +1,6 @@
 import * as React from 'react'
-import { mount, configure } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import { mount } from 'enzyme'
 import Konami from './'
-
-configure({ adapter: new Adapter() })
 
 function triggerKey (
   event: string,
