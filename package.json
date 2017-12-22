@@ -52,7 +52,7 @@
       "shared-node-browser"
     ]
   },
-  "description": "",
+  "description": "💅🏻 trigger a callback function on anything with a sequence of key presses",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/moimikey/react-konamikey.git"
