@@ -7,7 +7,7 @@
     "build": "yarn cleanup && yarn compile",
     "cleanup": "rimraf index.js",
     "compile": "babel src/index.js -o index.js",
-    "flow": "flow",
+    "flow": "flow --one-line --show-all-errors",
     "flow:typed": "flow-typed",
     "lint": "standard src",
     "prebuild": "yarn lint && yarn test:ci && yarn flow",
