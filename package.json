@@ -4,15 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "compile": "babel src/index.js -o index.js",
-    "prebuild": "yarn lint && yarn test && yarn flow",
-    "prepublish": "yarn build",
     "build": "yarn cleanup && yarn compile",
     "cleanup": "rimraf index.js",
-    "test": "jest",
-    "lint": "standard src",
+    "compile": "babel src/index.js -o index.js",
     "flow": "flow",
-    "flow:typed": "flow-typed"
+    "flow:typed": "flow-typed",
+    "lint": "standard src",
+    "prebuild": "yarn lint && yarn test:ci && yarn flow",
+    "prepublish": "yarn build",
+    "test": "jest",
+    "test:ci": "jest --verbose --runInBand --ci"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -39,7 +40,7 @@
     "standard": "^10.0.3"
   },
   "peerDependencies": {
-    "react": ">=15"
+    "react": ">=16"
   },
   "jest": {
     "setupFiles": [
