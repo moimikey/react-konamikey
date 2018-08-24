@@ -1,6 +1,7 @@
 {
   "name": "react-konamikey",
   "version": "1.0.2",
+  "reveal": true,
   "main": "index.js",
   "license": "MIT",
   "scripts": {
