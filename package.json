@@ -5,14 +5,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn cleanup && yarn compile",
+    "build": "npm run cleanup && npm run compile",
     "cleanup": "rimraf index.js",
     "compile": "babel src/index.js -o index.js",
     "flow": "flow --one-line --show-all-errors",
     "flow:typed": "flow-typed",
     "lint": "standard src",
-    "prebuild": "yarn lint && yarn test:ci && yarn flow",
-    "prepare": "yarn build",
+    "prebuild": "npm run lint && npm run test:ci && npm run flow",
+    "prepare": "npm run build",
     "test": "jest",
     "test:ci": "jest --verbose --runInBand --ci"
   },
@@ -47,7 +47,8 @@
     "setupFiles": [
       "./.setup",
       "raf/polyfill"
-    ]
+    ],
+    "testURL": "http://localhost/"
   },
   "standard": {
     "globals": [],
@@ -63,7 +64,7 @@
       "shared-node-browser"
     ]
   },
-  "description": "💅🏻 trigger a callback function on anything with a sequence of key presses",
+  "description": "💅 trigger a callback function on anything with a sequence of key presses",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/moimikey/react-konamikey.git"
