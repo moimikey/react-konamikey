@@ -42,7 +42,7 @@ import Konami from 'react-konamikey'
 
 ### live example
 
-https://www.webpackbin.com/bins/-L1-29LWQ5A4r6O6cveW
+https://codesandbox.io/s/blissful-pare-c7hvb
 
 ## Props
 
