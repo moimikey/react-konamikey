@@ -4,14 +4,14 @@ import * as React from 'react'
 
 type Props = {
   children?: ?React.Element<any>,
-  element: ({ refFn: () => HTMLElement }) => React$Element<string> | void,
+  element: ({ refFn: () => HTMLElement }) => React.Element<string> | void,
   payload?: () => mixed,
   sequence: Array<string>
 }
 
 class Konami extends React.Component<Props> {
   pressed: number = 0
-  element: React.ElementRef<*> = void 0
+  element: React.ElementRef<*> = undefined
 
   onkeydown = (evt: KeyboardEvent): mixed => {
     const { payload = (): mixed => {}, sequence } = this.props || {}
@@ -53,7 +53,7 @@ class Konami extends React.Component<Props> {
   }
 
   render () {
-    const { children, element } = this.props || {}
+    const { children = null, element } = this.props || {}
 
     if (element instanceof Function) {
       return element({
@@ -63,7 +63,7 @@ class Konami extends React.Component<Props> {
       })
     }
 
-    return children ? children : null
+    return children
   }
 }
 
