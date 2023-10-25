@@ -42,6 +42,7 @@
     "test:ci": "jest --verbose --runInBand --ci"
   },
   "devDependencies": {
+    "@parcel/config-default": "2.10.1",
     "@parcel/packager-ts": "2.10.1",
     "@parcel/transformer-typescript-types": "2.10.1",
     "@parcel/validator-typescript": "2.10.1",
