@@ -1,3 +1,8 @@
-src/
 .circleci/
-.setup.js
+.parcel-cache/
+node_modules/
+src/
+.gitignore
+.parcelrc
+.swcrc
+tsconfig.json

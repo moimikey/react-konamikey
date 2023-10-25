@@ -1,0 +1,11 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "jsx": "preserve",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "noImplicitAny": false,
+    "strict": true,
+    "target": "es2021"
+  }
+}

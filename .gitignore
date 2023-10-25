@@ -1,4 +1,3 @@
-index.js
-index.js.flow
-!src/index.js
+!src/index.tsx
+!src/index.test.tsx
 node_modules

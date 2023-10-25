@@ -6,14 +6,15 @@ Trigger a callback function on anything with a sequence of key presses.
 
 ```bash
 # requires react@>=16
-yarn add react-konamikey
+pnpm install react-konamikey
 ```
 
 ## Usage
+
 ```jsx
-import * as React from 'react'
-import Konami from 'react-konamikey'
-// const Konami = require('react-konamikey').default
+import * as React from 'react';
+import { Konami } from 'react-konamikey';
+// const Konami = require('react-konamikey');
 ```
 
 ### attach to an element (using `refFn`)
@@ -63,7 +64,6 @@ A payload function to execute, once the Konami sequence has been fulfilled.
 Type: _Array [required]_
 
 An array of strings representing key names.
-
 
 ## License
 
